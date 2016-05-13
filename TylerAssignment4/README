@@ -1,0 +1,13 @@
+Tyler Jackimowicz Assignment 4 README file
+
+Instructions:
+1. Open TylerAssignment4 zipped folder and extract files to desktop.
+2. Open Terminal.
+3. In the terminal, type CD Desktop.
+4. Next, type g++ -o diskSch diskScheduling.c to compile diskScheduling.c.
+9. Finally type ./diskSch input1mil.txt (or another text file name with cylinder numbers) to run disk Scheduling algorithms.
+
+Description of project: 
+	This project demonstrates First Come First Served, Shortest Seek Time First, and Look Algorithms. Each method reads in cylinder numbers from a text file and prints the total head movement for each algorithm to show which algorithm was more sufficient. 
+
+	There are currently no known issues with the project. 
