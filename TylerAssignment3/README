@@ -1,0 +1,23 @@
+Tyler Jackimowicz Assignment 3 README file
+
+Instructions:
+1. Open Assignment3 zipped folder and extract files to desktop.
+2. Open Terminal.
+3. In the terminal, type CD Desktop.
+4. Next, type cc -pthread -o procA sshm.c process_A.c to compile to process A.
+5. type cc -pthread -o procB sshm.c process_B.c to compile to process B.
+6. And type cc -pthread -o procC sshm.c process_C.c to compile to process C.
+7. Type ./procA to run process A. 
+8. Type ./procB to run process B.
+9. and finally Type ./procC to run process C.
+
+Description of project: 
+	This project demonstrates process synchronization, critical section mutual exclusion using semaphores, shared memory and threads. The project tracks the sponsors account for charges that later gets added to Moogles account. 
+
+	Process A contains two threads. Thread one reads the provided data file and stores the information into an array. Thread two stores the account information from the array into shared memory for each sponsor and zeros out the array. 
+
+	Process B reads the account information from shared memory and stores the total amount into the clearinghouse total that is also in shared memory. After, it zeros out each sponsor's account. 
+
+	Process C transfers the funds from the clearinghouse total to moogle's account, essentially paying moogle, zeroing out the clearinghouse total after. 
+
+	The only issue I currently see is on rare occurrences each sponsor account will return 0 after running process A. Also, I was getting different total values when using the full moogle.txt.
