@@ -1,0 +1,14 @@
+Tyler Jackimowicz Assignment 2 README file
+
+Instructions:
+1. Open Assignment2 zipped folder and extract files to desktop.
+2. Open Terminal.
+3. In the terminal, type CD Desktop.
+4. Next, type g++ Assignment2.c to compile to project.
+5. Type ./a.out to run the program. 
+6. To end the program press CTRL+C.
+
+Description of project: 
+	Assignemnt2.c creates 5 "children" processes from one parent that utilizes the lock and unlock methods, in which create or delete files in a way that mimics semaphores. This is utilized in the main function for each child process or "Philosopher" to go through states of eating, thinking, being hungry or sated. This program is intended to run through the dining philosopher's problem and recognize deadlock. 
+	I am unaware on exactly how to detect the deadlock problem that arises with this program. To fix the issue I made the process wait if it could not lock both chopsticks and put down the left chopstick after waiting a few second. To my knowledge, the program runs in accordance with the program assignment description.  
+
