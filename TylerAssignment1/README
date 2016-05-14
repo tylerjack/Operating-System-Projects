@@ -1,0 +1,11 @@
+Tyler Jackimowicz Assignment 1 README file
+
+Instructions:
+1. Open Assignment1 zipped folder and extract files to desktop.
+2. Open Terminal.
+3. In the terminal, type CD Desktop.
+4. Next, type g++ Assignment1.c to compile to project.
+5. On the next line, type ./a.out (your text file name here) in order to run the executable. 
+	Tip: .txt is not required with text file name
+6. The file will be printed to the command line and press the enter key to scroll down the text.
+
